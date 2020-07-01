@@ -2,9 +2,6 @@
         'mixins',
 		'variables',
 		'slick';
-
-
-
 // -------------------------------------------FONTS
 @font-face {
 	font-family: 'gotham';
@@ -62,6 +59,9 @@ body{
 	font-size: 1.8rem;
 	line-height: 1.6;
 	color: $text-color;
+	@media screen and (max-width: 1024px) {
+		height: 700rem;
+	}
 }
 .container {
 	width: 1170px;
@@ -105,6 +105,9 @@ body{
 		width: 50%;
 		margin: 0 auto;
 		font-family: 'GothamBook';
+		@media screen and (max-width: 1024px) {
+			width: 45%;
+		}
 	}
 	&__link {
 		font-size: 1.4rem;
@@ -140,6 +143,10 @@ body{
     margin: 0px;
 	display: flex;
 	align-items: center;
+	@media screen and (max-width: 1024px) {
+		width: 180px;
+		justify-content: space-between;
+	}
 	&__shiny {
 		cursor: pointer;
 		transition: 200ms ease-in;
@@ -151,6 +158,9 @@ body{
 		padding-left: .1rem;
 		padding-top: .7rem;
 		border-radius: 50%;
+		@media screen and (max-width: 1024px) {
+			margin: 0;
+		}
 		&:before {
 			content: '';
 			border: 2px solid rgba(255, 255, 255, .5);
@@ -461,7 +471,8 @@ body{
 		width: 53%;
         position: relative;
         background-image: url(../img/about/about1.jpg);
-        box-shadow: -200px -65px 0px 9px rgba(85,183,255,1);
+		box-shadow: -200px -65px 0px 9px rgba(85,183,255,1);
+		background-repeat: no-repeat;
 		&--second {
         background-image: url(../img/about/about2.jpg);
         box-shadow: 200px -65px 0px 9px rgba(183,85,255,1);
