@@ -878,6 +878,9 @@ body {
     text-transform: uppercase;
     padding-bottom: 6rem;
     position: relative; }
+    @media screen and (max-width: 768px) {
+      .heading__title {
+        padding-bottom: 4rem; } }
     .heading__title::before {
       content: '';
       display: block;
@@ -907,10 +910,20 @@ body {
     -webkit-box-shadow: -200px -65px 0px 9px #55b7ff;
     box-shadow: -200px -65px 0px 9px #55b7ff;
     background-repeat: no-repeat; }
+    @media screen and (max-width: 768px) {
+      .desc__pic {
+        margin-left: 3rem;
+        -webkit-box-shadow: -100px -40px 0px 0px #55b7ff;
+        box-shadow: -100px -40px 0px 0px #55b7ff; } }
     .desc__pic--second {
       background-image: url(../img/about/about2.jpg);
       -webkit-box-shadow: 200px -65px 0px 9px #b755ff;
       box-shadow: 200px -65px 0px 9px #b755ff; }
+      @media screen and (max-width: 768px) {
+        .desc__pic--second {
+          margin: 0 3rem 0 0;
+          -webkit-box-shadow: 100px -60px 0px -30px #b755ff;
+          box-shadow: 100px -60px 0px -30px #b755ff; } }
   .desc__img {
     max-width: 630px;
     max-height: 470px;
@@ -920,8 +933,14 @@ body {
   .desc__content {
     width: 47%;
     padding: 45px 20px 60px 80px; }
+    @media screen and (max-width: 768px) {
+      .desc__content {
+        padding: 0 10px 0 35px; } }
     .desc__content--second {
       padding: 60px 70px 5px 20px; }
+      @media screen and (max-width: 768px) {
+        .desc__content--second {
+          padding: 0 35px 0 10px; } }
   .desc__suptitle {
     font-family: 'gothambold1';
     text-transform: uppercase;
