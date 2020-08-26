@@ -215,3 +215,10 @@ function initMap() {
     title: '91 Nolan'
   });
 }
+
+// burger
+$(document).ready(function(){
+  $("#header > nav > div.nav__burger").click(function() {
+    $("#header > nav > div.nav__links").toggle('slow', 'swing');
+  });
+});

@@ -59,9 +59,9 @@ body{
 	font-size: 1.8rem;
 	line-height: 1.6;
 	color: $text-color;
-	@media screen and (max-width: 1024px) {
-		height: 700rem;
-	}
+	// @media screen and (max-width: 1024px) {
+	// 	height: auto;
+	// }
 }
 .container {
 	width: 1170px;
@@ -95,9 +95,55 @@ body{
 		&:focus {
 			transform: scale(1.2);
 		}
+		@media screen and (max-width: 768px) {
+			width: 180px;
+			height: 50%;
+			@include flexCenterSelf;
+		}
 	}
 	&__logo {
 		max-width: 100%;
+	}
+	&__burger {
+		border: 2px solid rgba(255, 255, 255, .5);
+		border-radius: 50%;
+		height: 3.5rem;
+		width: 3.5rem;
+		display: none;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+		position: relative;
+		overflow: hidden;
+		&::after {
+			content: '';
+			position: absolute;
+			top: -50%;
+			right: -50%;
+			bottom: -50%;
+			left: -50%;
+			background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255,255,255,0.5) 50%, rgba(229, 172, 142, 0));
+			transform: rotateZ(60deg) translate(-2em, 12em);
+		}
+		&:hover::after, 
+		&:focus::after {
+			animation: sheen 1s forwards;
+		}
+		@media screen and (max-width: 768px) {
+			display: flex;
+		}
+	}
+	&__bar {
+		width: 2.5rem;
+		height: .4rem;
+		background-color: #fff;
+		border-radius: 10px;
+		&:first-child {
+			width: 1.5rem;
+		}
+		&:last-child {
+			width: 1.5rem;
+		}
 	}
 	&__links {
 		display: flex;
@@ -107,6 +153,14 @@ body{
 		font-family: 'GothamBook';
 		@media screen and (max-width: 1024px) {
 			width: 45%;
+		}
+		@media screen and (max-width: 768px) {
+			display: none;
+			position: absolute;
+			top: 6rem;
+			width: 100%;
+			// outline: 2px solid red;
+			// justify-content: space-evenly;
 		}
 	}
 	&__link {
@@ -132,6 +186,10 @@ body{
 		&:active:before,
 		&:focus:before {
 			background-color: #fff;
+		}
+		@media screen and (max-width: 768px) {
+			margin: 0 3rem;
+			font-size: 1.6rem;
 		}
 	}
 }
@@ -240,7 +298,7 @@ body{
 			bottom: -50%;
 			left: -50%;
 			background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255,255,255,0.5) 50%, rgba(229, 172, 142, 0));
-			transform: rotateZ(60deg) translate(-5em, 7.5em);
+			transform: rotateZ(60deg) translate(-2em, 12em); // translate (-5em, 7.5em)
 		}
 		&:hover::after, 
 		&:focus::after {
@@ -250,6 +308,9 @@ body{
 			100% {
 				transform: rotateZ(60deg) translate(1em, -9em);
 			}
+		}
+		@media screen and (max-width: 768px) {
+			margin-left: 1rem;
 		}
 	}
 }
@@ -275,6 +336,7 @@ body{
 		line-height: 1;
 		text-transform: uppercase;
 		overflow: hidden;
+		// @media screen and (max-width: 768px) {}
 	}
 		&__img {
 			@include pos();
@@ -847,6 +909,9 @@ body{
 	color: $text-color;
 	box-shadow: 0px 0px 28px 5px rgba(0,0,0,0.75);
 	font-size: 1.9rem;
+	@media screen and (max-width: 768px) {
+		width: 600px;
+	}
 	&__data {
 		display: flex;
 	}
@@ -1042,7 +1107,7 @@ body{
 			bottom: -50%;
 			left: -50%;
 			background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255,255,255,0.5) 50%, rgba(229, 172, 142, 0));
-			transform: rotateZ(60deg) translate(-5em, 7.5em);
+			transform: rotateZ(60deg) translate(-2em, 12em);
 		}
 		&:hover::after, 
 		&:focus::after {

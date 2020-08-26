@@ -425,9 +425,6 @@ body {
   font-size: 1.8rem;
   line-height: 1.6;
   color: #2c4058; }
-  @media screen and (max-width: 1024px) {
-    body {
-      height: 700rem; } }
 
 .container {
   width: 1170px;
@@ -470,8 +467,68 @@ body {
       -ms-transform: scale(1.2);
       -o-transform: scale(1.2);
       transform: scale(1.2); }
+    @media screen and (max-width: 768px) {
+      .nav__logo-wrap {
+        width: 180px;
+        height: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-self: center;
+        -ms-flex-item-align: center;
+        align-self: center; } }
   .nav__logo {
     max-width: 100%; }
+  .nav__burger {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    height: 3.5rem;
+    width: 3.5rem;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    position: relative;
+    overflow: hidden; }
+    .nav__burger::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -50%;
+      bottom: -50%;
+      left: -50%;
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(229, 172, 142, 0)), color-stop(50%, rgba(255, 255, 255, 0.5)), to(rgba(229, 172, 142, 0)));
+      background: -o-linear-gradient(top, rgba(229, 172, 142, 0), rgba(255, 255, 255, 0.5) 50%, rgba(229, 172, 142, 0));
+      background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255, 255, 255, 0.5) 50%, rgba(229, 172, 142, 0));
+      -webkit-transform: rotateZ(60deg) translate(-2em, 12em);
+      -ms-transform: rotate(60deg) translate(-2em, 12em);
+      -o-transform: rotateZ(60deg) translate(-2em, 12em);
+      transform: rotateZ(60deg) translate(-2em, 12em); }
+    .nav__burger:hover::after, .nav__burger:focus::after {
+      -webkit-animation: sheen 1s forwards;
+      -o-animation: sheen 1s forwards;
+      animation: sheen 1s forwards; }
+    @media screen and (max-width: 768px) {
+      .nav__burger {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; } }
+  .nav__bar {
+    width: 2.5rem;
+    height: .4rem;
+    background-color: #fff;
+    border-radius: 10px; }
+    .nav__bar:first-child {
+      width: 1.5rem; }
+    .nav__bar:last-child {
+      width: 1.5rem; }
   .nav__links {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -484,6 +541,12 @@ body {
     @media screen and (max-width: 1024px) {
       .nav__links {
         width: 45%; } }
+    @media screen and (max-width: 768px) {
+      .nav__links {
+        display: none;
+        position: absolute;
+        top: 6rem;
+        width: 100%; } }
   .nav__link {
     font-size: 1.4rem;
     font-weight: 400;
@@ -509,6 +572,10 @@ body {
       transition: all .4s ease-in; }
     .nav__link:hover:before, .nav__link:active:before, .nav__link:focus:before {
       background-color: #fff; }
+    @media screen and (max-width: 768px) {
+      .nav__link {
+        margin: 0 3rem;
+        font-size: 1.6rem; } }
 
 .social {
   list-style: none;
@@ -560,10 +627,10 @@ body {
       background: -webkit-gradient(linear, left top, left bottom, from(rgba(229, 172, 142, 0)), color-stop(50%, rgba(255, 255, 255, 0.5)), to(rgba(229, 172, 142, 0)));
       background: -o-linear-gradient(top, rgba(229, 172, 142, 0), rgba(255, 255, 255, 0.5) 50%, rgba(229, 172, 142, 0));
       background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255, 255, 255, 0.5) 50%, rgba(229, 172, 142, 0));
-      -webkit-transform: rotateZ(60deg) translate(-5em, 7.5em);
-      -ms-transform: rotate(60deg) translate(-5em, 7.5em);
-      -o-transform: rotateZ(60deg) translate(-5em, 7.5em);
-      transform: rotateZ(60deg) translate(-5em, 7.5em); }
+      -webkit-transform: rotateZ(60deg) translate(-2em, 12em);
+      -ms-transform: rotate(60deg) translate(-2em, 12em);
+      -o-transform: rotateZ(60deg) translate(-2em, 12em);
+      transform: rotateZ(60deg) translate(-2em, 12em); }
     .social__shiny:hover::after, .social__shiny:focus::after {
       -webkit-animation: sheen 1s forwards;
       -o-animation: sheen 1s forwards;
@@ -584,6 +651,9 @@ body {
     -webkit-transform: rotateZ(60deg) translate(1em, -9em);
     -o-transform: rotateZ(60deg) translate(1em, -9em);
     transform: rotateZ(60deg) translate(1em, -9em); } }
+    @media screen and (max-width: 768px) {
+      .social__shiny {
+        margin-left: 1rem; } }
 
 .slider_one {
   height: 100%;
@@ -1121,6 +1191,9 @@ body {
   -webkit-box-shadow: 0px 0px 28px 5px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 28px 5px rgba(0, 0, 0, 0.75);
   font-size: 1.9rem; }
+  @media screen and (max-width: 768px) {
+    .form {
+      width: 600px; } }
   .form__data {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1339,10 +1412,10 @@ body {
       background: -webkit-gradient(linear, left top, left bottom, from(rgba(229, 172, 142, 0)), color-stop(50%, rgba(255, 255, 255, 0.5)), to(rgba(229, 172, 142, 0)));
       background: -o-linear-gradient(top, rgba(229, 172, 142, 0), rgba(255, 255, 255, 0.5) 50%, rgba(229, 172, 142, 0));
       background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255, 255, 255, 0.5) 50%, rgba(229, 172, 142, 0));
-      -webkit-transform: rotateZ(60deg) translate(-5em, 7.5em);
-      -ms-transform: rotate(60deg) translate(-5em, 7.5em);
-      -o-transform: rotateZ(60deg) translate(-5em, 7.5em);
-      transform: rotateZ(60deg) translate(-5em, 7.5em); }
+      -webkit-transform: rotateZ(60deg) translate(-2em, 12em);
+      -ms-transform: rotate(60deg) translate(-2em, 12em);
+      -o-transform: rotateZ(60deg) translate(-2em, 12em);
+      transform: rotateZ(60deg) translate(-2em, 12em); }
     .social__shiny--footer:hover::after, .social__shiny--footer:focus::after {
       -webkit-animation: sheen 1s forwards;
       -o-animation: sheen 1s forwards;
