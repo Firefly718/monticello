@@ -520,12 +520,6 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
-  @media screen and (max-width: 1024px) {
-    .social {
-      width: 180px;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between; } }
   .social__shiny {
     cursor: pointer;
     -webkit-transition: 200ms ease-in;
@@ -536,12 +530,8 @@ body {
     margin-left: 2rem;
     height: 4rem;
     width: 4rem;
-    padding-left: .1rem;
-    padding-top: .7rem;
+    padding-top: .8rem;
     border-radius: 50%; }
-    @media screen and (max-width: 1024px) {
-      .social__shiny {
-        margin: 0; } }
     .social__shiny:before {
       content: '';
       border: 2px solid rgba(255, 255, 255, 0.5);

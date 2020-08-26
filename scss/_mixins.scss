@@ -8,3 +8,15 @@
 @mixin tr {
 	transition: all .4s ease-in;
 }
+
+@mixin flexCenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin flexCenterSelf {
+	display: flex;
+	justify-self: center;
+	align-self: center;
+}
