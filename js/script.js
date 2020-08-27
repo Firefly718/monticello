@@ -17,10 +17,19 @@ $(document).ready(function() {
   $('.slider-two').slick({
       dots: true,
       slidesToShow: 3,
-      autoplay: true,
-      autoplaySpeed: 4000
+      autoplay: false,
+      autoplaySpeed: 4000,
+      responsive: [
+        {
+          breakpoint: 769,
+          settings: {
+            slidesToShow: 2,
+          }
+        }
+      ]
   });
 });
+
 
 function initMap() {
   let geo = {

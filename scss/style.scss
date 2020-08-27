@@ -783,6 +783,9 @@ body{
 		text-transform: uppercase;
 		font-size: 1.8rem;
 		line-height: 1;
+		@media screen and (max-width: 768px) {
+			font-size: 1.5rem;
+		}
 	}
 	&__date {
 		margin: 0;
@@ -978,6 +981,9 @@ body{
 		text-decoration: none;
 		color: $text-color;
 		@include tr();
+		@media screen and (max-width: 768px) {
+			font-size: 1.5rem;
+		}
 		&--email,
 		&--tel,
 		&--adr {
@@ -1062,6 +1068,9 @@ body{
 	background-size: contain;
 	color: #fff;
 	padding: 200px 0 200px 0;
+	@media screen and (max-width: 768px) {
+		padding-bottom: 6rem;
+	}
 	&__content {
 		width: 800px;
 		max-width: 80%;

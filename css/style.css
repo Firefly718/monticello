@@ -1084,6 +1084,9 @@ body {
     text-transform: uppercase;
     font-size: 1.8rem;
     line-height: 1; }
+    @media screen and (max-width: 768px) {
+      .news__name {
+        font-size: 1.5rem; } }
   .news__date {
     margin: 0;
     color: #55b7ff;
@@ -1275,6 +1278,9 @@ body {
     -webkit-transition: all .4s ease-in;
     -o-transition: all .4s ease-in;
     transition: all .4s ease-in; }
+    @media screen and (max-width: 768px) {
+      .form__item {
+        font-size: 1.5rem; } }
     .form__item--email:hover, .form__item--email:focus, .form__item--email:active, .form__item--tel:hover, .form__item--tel:focus, .form__item--tel:active, .form__item--adr:hover, .form__item--adr:focus, .form__item--adr:active {
       color: #55b7ff; }
   .form__icon {
@@ -1357,6 +1363,9 @@ body {
   background-size: contain;
   color: #fff;
   padding: 200px 0 200px 0; }
+  @media screen and (max-width: 768px) {
+    .footer {
+      padding-bottom: 6rem; } }
   .footer__content {
     width: 800px;
     max-width: 80%;
