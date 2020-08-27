@@ -86,6 +86,9 @@ body{
 	transform: translate(-50%, 0);
 	z-index: 1;
 	text-transform: uppercase;
+	@media screen and (max-width: 425px) {
+		justify-content: space-evenly;
+	}
 	&__logo-wrap {
 		width: 245px;
 		height: 60px;
@@ -100,6 +103,9 @@ body{
 			height: 50%;
 			@include flexCenterSelf;
 		}
+		@media screen and (max-width: 425px) {
+			order: -3;
+		}
 	}
 	&__logo {
 		max-width: 100%;
@@ -107,8 +113,8 @@ body{
 	&__burger {
 		border: 2px solid rgba(255, 255, 255, .5);
 		border-radius: 50%;
-		height: 3.5rem;
-		width: 3.5rem;
+		height: 4rem; //3.5
+		width: 4rem;
 		display: none;
 		flex-direction: column;
 		align-items: center;
@@ -131,6 +137,10 @@ body{
 		}
 		@media screen and (max-width: 768px) {
 			display: flex;
+		}
+		@media screen and (max-width: 425px) {
+			margin-left: 1rem;
+			order: -1;
 		}
 	}
 	&__bar {
@@ -162,6 +172,13 @@ body{
 			// outline: 2px solid red;
 			// justify-content: space-evenly;
 		}
+		@media screen and (max-width: 425px) {
+			height: auto;
+			background-color: $text-color;
+			left: -3rem;
+			width: auto;
+			border-radius: 0 10px 10px 0;
+		}
 	}
 	&__link {
 		font-size: 1.4rem;
@@ -190,6 +207,10 @@ body{
 		@media screen and (max-width: 768px) {
 			margin: 0 3rem;
 			font-size: 1.6rem;
+		}
+		@media screen and (max-width: 425px) {
+			margin: 1rem 5.5rem;
+			display: block;
 		}
 	}
 }
@@ -266,6 +287,9 @@ body{
 	margin: 0px;
 	display: flex;
 	align-items: center;
+	@media screen and (max-width: 425px) {
+		order: -2;
+	}
 	&__shiny {
 		cursor: pointer;
 		transition: 200ms ease-in;
@@ -313,6 +337,11 @@ body{
 			margin-left: 1rem;
 		}
 	}
+	// &__shiny:first-child {
+	// 	@media screen and (max-width: 425px) {
+	// 		margin-left: 0;
+	// 	}
+	// }
 }
 
 
@@ -347,11 +376,17 @@ body{
 			@include pos();
 			width: 90%;
 			text-align: center;
+			@media screen and (max-width: 425px) {
+				margin-top: 6rem;
+			}
 		}
 		&__title {
 			font-size: 8rem;
 			font-family: 'gothambold1', serif;
 			margin: 0 auto;
+			@media screen and (max-width: 425px) {
+				font-size: 4rem;
+			}
 		}
 		&__subtitle {
 			font-size: 1.8rem;
@@ -557,6 +592,9 @@ body{
 		@media screen and (max-width: 768px) {
 			padding-bottom: 4rem;
 		}
+		@media screen and (max-width: 425px) {
+			font-size: 4rem;
+		}
 		&::before {
 			content: '';
 			display: block;
@@ -581,6 +619,9 @@ body{
 	background-color: #fff;
 	color: $text-color;
 	overflow: hidden;
+	@media screen and (max-width: 425px) {
+		padding-top: 6rem;
+	}
 	&__main {
 		display: flex;
 		position: relative;
@@ -931,6 +972,9 @@ body{
 	font-size: 1.9rem;
 	@media screen and (max-width: 768px) {
 		width: 600px;
+	}
+	@media screen and (max-width: 425px) {
+		width: 35rem;
 	}
 	&__data {
 		display: flex;
