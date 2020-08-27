@@ -17,13 +17,19 @@ $(document).ready(function() {
   $('.slider-two').slick({
       dots: true,
       slidesToShow: 3,
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: 4000,
       responsive: [
         {
           breakpoint: 769,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 426,
+          settings: {
+            slidesToShow: 1
           }
         }
       ]

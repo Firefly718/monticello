@@ -813,6 +813,9 @@ body {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
+  @media screen and (max-width: 425px) {
+    .slick-dots {
+      width: 100%; } }
   .slick-dots li {
     display: block;
     margin: 20px 0; }
@@ -1112,6 +1115,9 @@ body {
   background-size: contain;
   padding: 90px 0 150px 0;
   position: relative; }
+  @media screen and (max-width: 425px) {
+    .news {
+      padding: 6rem 0 12rem 0; } }
   .news__main {
     font-family: 'gothambold1';
     display: inline-block;
@@ -1187,6 +1193,9 @@ body {
   padding: 90px 0;
   background-color: #fff;
   text-align: center; }
+  @media screen and (max-width: 425px) {
+    .gallery {
+      padding: 6rem 0; } }
   .gallery__btn {
     margin-top: 55px;
     font-family: 'GothamBook';
@@ -1213,6 +1222,9 @@ body {
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 10px;
     grid-row-gap: 10px; }
+    @media screen and (max-width: 425px) {
+      .gallery__main {
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr; } }
   .gallery__iframe {
     width: 100%;
     height: 100%; }
@@ -1233,14 +1245,29 @@ body {
       -o-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       background: url(../img/360.png) no-repeat center; }
+    @media screen and (max-width: 425px) {
+      .gallery__pic {
+        grid-area: 1 / 1 / 5 / 5; } }
   .gallery__pic--topLeft {
     grid-area: 1 / 3 / 2 / 4; }
+    @media screen and (max-width: 425px) {
+      .gallery__pic--topLeft {
+        grid-area: 5 / 1 / 6 / 2; } }
   .gallery__pic--topRight {
     grid-area: 1 / 4 / 2 / 5; }
+    @media screen and (max-width: 425px) {
+      .gallery__pic--topRight {
+        grid-area: 5 / 2 / 6 / 3; } }
   .gallery__pic--bottomLeft {
     grid-area: 2 / 3 / 3 / 4; }
+    @media screen and (max-width: 425px) {
+      .gallery__pic--bottomLeft {
+        grid-area: 5 / 3 / 6 / 4; } }
   .gallery__pic-bottomRight {
     grid-area: 2 / 4 / 3 / 5; }
+    @media screen and (max-width: 425px) {
+      .gallery__pic-bottomRight {
+        grid-area: 5 / 4 / 6 / 5; } }
   .gallery__pic--topLeft, .gallery__pic--topRight, .gallery__pic--bottomLeft, .gallery__pic--bottomRight {
     overflow: hidden;
     background-color: #fff;
