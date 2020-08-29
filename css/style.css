@@ -495,6 +495,9 @@ body {
         order: -3; } }
   .nav__logo {
     max-width: 100%; }
+    @media screen and (max-width: 320px) {
+      .nav__logo {
+        padding: 0 1rem; } }
   .nav__burger {
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 50%;
@@ -715,6 +718,10 @@ body {
     flex-direction: row;
     position: relative; } }
 
+@media screen and (max-width: 320px) {
+  #footer > div > div.footer__nav > ul {
+    padding: 0 2rem; } }
+
 .slider_one {
   height: 100%;
   width: 100%;
@@ -761,10 +768,16 @@ body {
     @media screen and (max-width: 425px) {
       .header__title {
         font-size: 4rem; } }
+    @media screen and (max-width: 320px) {
+      .header__title {
+        padding: 0 2rem; } }
   .header__subtitle {
     font-size: 1.8rem;
     font-family: 'GothamBook', serif;
     letter-spacing: 2px; }
+    @media screen and (max-width: 320px) {
+      .header__subtitle {
+        padding: 0 2rem; } }
 
 .scroll {
   width: 40px;
@@ -825,6 +838,9 @@ body {
     @media screen and (max-width: 425px) {
       .head-block__title {
         font-size: 3rem; } }
+    @media screen and (max-width: 320px) {
+      .head-block__title {
+        padding: 2rem; } }
     .head-block__title--news {
       color: #fff; }
       .head-block__title--news::before {
@@ -873,6 +889,9 @@ body {
   display: inline-block;
   width: 100%;
   margin: 0 auto; }
+  @media screen and (max-width: 320px) {
+    .slider-two {
+      padding: 0 4rem; } }
   .slider-two .slick-dots {
     text-align: center;
     margin: 0;
@@ -885,6 +904,9 @@ body {
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
+    @media screen and (max-width: 320px) {
+      .slider-two .slick-dots {
+        margin-top: -3rem; } }
     .slider-two .slick-dots li {
       display: inline-block;
       margin: 20px;
@@ -957,6 +979,10 @@ body {
       .heading__title {
         font-size: 4rem;
         padding-bottom: 0; } }
+    @media screen and (max-width: 320px) {
+      .heading__title {
+        font-size: 3.5rem;
+        padding: 0 2rem; } }
     .heading__title::before {
       content: '';
       display: block;
@@ -1061,6 +1087,9 @@ body {
     @media screen and (max-width: 425px) {
       .desc__suptitle {
         text-align: center; } }
+    @media screen and (max-width: 320px) {
+      .desc__suptitle {
+        padding: 0 2rem; } }
   .desc__title {
     font-family: 'gothambold1';
     text-transform: uppercase;
@@ -1071,6 +1100,10 @@ body {
     @media screen and (max-width: 425px) {
       .desc__title {
         text-align: center; } }
+    @media screen and (max-width: 320px) {
+      .desc__title {
+        font-size: 4rem;
+        padding: 0 2rem; } }
   .desc__text {
     font-size: 1.8rem;
     margin: 35px 0;
@@ -1080,6 +1113,9 @@ body {
     @media screen and (max-width: 425px) {
       .desc__text {
         text-align: justify; } }
+    @media screen and (max-width: 320px) {
+      .desc__text {
+        padding: 0 1rem; } }
   .desc__btn {
     display: block;
     text-align: center;
@@ -1134,6 +1170,9 @@ body {
   .desc__locate-text {
     margin: 0 0 0 10px;
     line-height: 1.3; }
+    @media screen and (max-width: 320px) {
+      .desc__locate-text {
+        margin: 0 1rem; } }
 
 .item {
   padding: 0 10px; }
@@ -1149,6 +1188,9 @@ body {
   @media screen and (max-width: 425px) {
     .news {
       padding: 6rem 0 12rem 0; } }
+  @media screen and (max-width: 320px) {
+    .news {
+      padding-bottom: 10rem; } }
   .news__main {
     font-family: 'gothambold1';
     display: inline-block;
@@ -1184,6 +1226,9 @@ body {
     overflow: hidden;
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis; }
+    @media screen and (max-width: 320px) {
+      .news__title {
+        padding: 0 1rem; } }
   .news__text {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.8rem;
@@ -1194,6 +1239,9 @@ body {
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
     overflow: hidden; }
+    @media screen and (max-width: 320px) {
+      .news__text {
+        padding: 0 1rem; } }
   .news__container {
     padding: 30px 20px 30px 10px; }
   .news__avatar {
@@ -1207,6 +1255,9 @@ body {
     display: flex;
     font-family: 'GothamBook';
     min-height: 80px; }
+    @media screen and (max-width: 320px) {
+      .news__bottom {
+        padding: 0 1rem; } }
   .news__name {
     margin: 15px 0 0 0;
     text-transform: uppercase;
@@ -1215,10 +1266,19 @@ body {
     @media screen and (max-width: 768px) {
       .news__name {
         font-size: 1.5rem; } }
+    @media screen and (max-width: 320px) {
+      .news__name {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        padding-right: 1rem; } }
   .news__date {
     margin: 0;
     color: #55b7ff;
     font-size: 1.4rem; }
+    @media screen and (max-width: 320px) {
+      .news__date {
+        font-size: 1.1rem;
+        padding-right: 1rem; } }
 
 .gallery {
   padding: 90px 0;
@@ -1340,6 +1400,9 @@ body {
     outline-color: rgba(255, 255, 255, 0);
     outline-offset: 15px;
     text-shadow: 1px 1px 2px #55b7ff; }
+  @media screen and (max-width: 320px) {
+    .btn-splash {
+      margin: 6rem 2rem 0 2rem; } }
 
 .form {
   position: absolute;
@@ -1369,10 +1432,19 @@ body {
     .form {
       width: 35rem;
       padding: 2rem; } }
+  @media screen and (max-width: 320px) {
+    .form {
+      width: 28rem; } }
   .form__data {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+    @media screen and (max-width: 320px) {
+      .form__data {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; } }
   .form__our-data {
     width: 45%;
     display: -webkit-box;
@@ -1382,6 +1454,10 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
+    @media screen and (max-width: 320px) {
+      .form__our-data {
+        width: 100%;
+        padding: 0 1rem; } }
   .form__data-user {
     width: 55%;
     display: -webkit-box;
@@ -1396,6 +1472,10 @@ body {
     @media screen and (max-width: 425px) {
       .form__data-user {
         padding-left: 2rem; } }
+    @media screen and (max-width: 320px) {
+      .form__data-user {
+        width: 100%;
+        padding: 0 1rem; } }
   .form__btn--splash {
     display: inline-block;
     text-decoration: none;
@@ -1429,6 +1509,10 @@ body {
     @media screen and (max-width: 425px) {
       .form__btn--splash {
         width: 15rem; } }
+    @media screen and (max-width: 320px) {
+      .form__btn--splash {
+        width: 100%;
+        padding: 0 1rem; } }
   .form__item {
     margin-bottom: 30px;
     font-style: normal;
@@ -1443,6 +1527,9 @@ body {
     @media screen and (max-width: 425px) {
       .form__item {
         font-size: 1.1rem; } }
+    @media screen and (max-width: 320px) {
+      .form__item {
+        font-size: 1.5rem; } }
     .form__item--email:hover, .form__item--email:focus, .form__item--email:active, .form__item--tel:hover, .form__item--tel:focus, .form__item--tel:active, .form__item--adr:hover, .form__item--adr:focus, .form__item--adr:active {
       color: #55b7ff; }
   .form__icon {
@@ -1516,6 +1603,9 @@ body {
   @media screen and (max-width: 425px) {
     .map {
       height: 50rem; } }
+  @media screen and (max-width: 320px) {
+    .map {
+      height: 70rem; } }
   .map h5 {
     display: none; }
 
@@ -1544,8 +1634,14 @@ body {
   .footer__copyright {
     padding: 6px 20px 0 0;
     border-right: 2px solid rgba(255, 255, 255, 0.4); }
+    @media screen and (max-width: 320px) {
+      .footer__copyright {
+        padding: 0 0 0 2rem; } }
   .footer__prod {
     padding: 6px 0 0 20px; }
+    @media screen and (max-width: 320px) {
+      .footer__prod {
+        padding: 0 1rem; } }
   .footer__nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1632,3 +1728,6 @@ body {
     -webkit-transform: rotateZ(60deg) translate(1em, -9em);
     -o-transform: rotateZ(60deg) translate(1em, -9em);
     transform: rotateZ(60deg) translate(1em, -9em); } }
+    @media screen and (max-width: 320px) {
+      .social__shiny--footer {
+        margin: 0 1rem; } }

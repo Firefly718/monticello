@@ -113,6 +113,9 @@ body{
 	}
 	&__logo {
 		max-width: 100%;
+		@media screen and (max-width: 320px) {
+			padding: 0 1rem;
+		}
 	}
 	&__burger {
 		border: 2px solid rgba(255, 255, 255, .5);
@@ -365,6 +368,9 @@ body{
 		// display: block;
 		// margin: 0 auto;
 	}
+	@media screen and (max-width: 320px) {
+		padding: 0 2rem;
+	}
 }
 
 
@@ -410,11 +416,17 @@ body{
 			@media screen and (max-width: 425px) {
 				font-size: 4rem;
 			}
+			@media screen and (max-width: 320px) {
+				padding: 0 2rem;
+			}
 		}
 		&__subtitle {
 			font-size: 1.8rem;
 			font-family: 'GothamBook', serif;
 			letter-spacing: 2px;
+			@media screen and (max-width: 320px) {
+				padding: 0 2rem;
+			}
 		}
 }
 
@@ -470,6 +482,9 @@ body{
 		@media screen and (max-width: 425px) {
 			font-size: 3rem;
 			// padding-bottom: 3rem;
+		}
+		@media screen and (max-width: 320px) {
+			padding: 2rem;
 		}
 		&--news {
 			color: #fff;
@@ -538,6 +553,9 @@ body{
 	display: inline-block;
 	width: 100%;
 	margin: 0 auto;
+	@media screen and (max-width: 320px) {
+		padding: 0 4rem;
+	}
 	.slick-dots {
 		text-align: center;
 		margin: 0;
@@ -547,6 +565,9 @@ body{
 		top: 110%;
 		right: 0;
 		transform: translate(-50%, -50%);
+		@media screen and (max-width: 320px) {
+			margin-top: -3rem;
+		}
 		li {
 			display: inline-block;
 			margin: 20px;
@@ -625,6 +646,10 @@ body{
 		@media screen and (max-width: 425px) {
 			font-size: 4rem;
 			padding-bottom: 0;
+		}
+		@media screen and (max-width: 320px) {
+			font-size: 3.5rem;
+			padding: 0 2rem;
 		}
 		&::before {
 			content: '';
@@ -734,6 +759,9 @@ body{
 		@media screen and (max-width: 425px) {
 			text-align: center;
 		}
+		@media screen and (max-width: 320px) {
+			padding: 0 2rem;
+		}
 	}
 	&__title {
         font-family: 'gothambold1';
@@ -745,6 +773,10 @@ body{
 		@media screen and (max-width: 425px) {
 			text-align: center;
 		}
+		@media screen and (max-width: 320px) {
+			font-size: 4rem;
+			padding: 0 2rem;
+		}
 	}
 	&__text {
 		font-size: 1.8rem;
@@ -754,6 +786,9 @@ body{
 		font-weight: 400;
 		@media screen and (max-width: 425px) {
 			text-align: justify;
+		}
+		@media screen and (max-width: 320px) {
+			padding: 0 1rem;
 		}
 	}
 	&__btn {
@@ -811,6 +846,9 @@ body{
 	&__locate-text {
 		margin: 0 0 0 10px;
 		line-height: 1.3;
+		@media screen and (max-width: 320px) {
+			margin: 0 1rem;
+		}
     }
 }
 
@@ -832,6 +870,9 @@ body{
 	position: relative;
 	@media screen and (max-width: 425px) {
 		padding: 6rem 0 12rem 0;
+	}
+	@media screen and (max-width: 320px) {
+		padding-bottom: 10rem;
 	}
 	&__main {
 		font-family: 'gothambold1';
@@ -867,6 +908,9 @@ body{
 		max-height: 60px;
 		overflow: hidden;
 		text-overflow: ellipsis;
+		@media screen and (max-width: 320px) {
+			padding: 0 1rem;
+		}
 	}
 	&__text {
 		font-family: 'Open Sans', sans-serif;
@@ -877,6 +921,9 @@ body{
 		max-height: 55px;
 		text-overflow: ellipsis;
 		overflow: hidden;
+		@media screen and (max-width: 320px) {
+			padding: 0 1rem;
+		}
 	}
 	&__container {
 		padding: 30px 20px 30px 10px;
@@ -891,6 +938,9 @@ body{
 		display: flex;
 		font-family: 'GothamBook';
 		min-height: 80px;
+		@media screen and (max-width: 320px) {
+			padding: 0 1rem;
+		}
 	}
 	&__name {
 		margin: 15px 0 0 0;
@@ -900,11 +950,21 @@ body{
 		@media screen and (max-width: 768px) {
 			font-size: 1.5rem;
 		}
+		@media screen and (max-width: 320px) {
+			font-size: 1.2rem;
+			margin-top: 1rem;
+			padding-right: 1rem;
+		}
 	}
 	&__date {
 		margin: 0;
 		color: $brand-color;
 		font-size: 1.4rem;
+		@media screen and (max-width: 320px) {
+			font-size: 1.1rem;
+			// padding: 0 1rem;
+			padding-right: 1rem;
+		}
 	}
 }
 
@@ -1041,6 +1101,9 @@ body{
 		outline-offset: 15px;
 		text-shadow: 1px 1px 2px $brand-color; 
 	}
+	@media screen and (max-width: 320px) {
+		margin: 6rem 2rem 0 2rem;
+	}
 } 
   
 
@@ -1071,13 +1134,23 @@ body{
 		width: 35rem;
 		padding: 2rem;
 	}
+	@media screen and (max-width: 320px) {
+		width: 28rem;
+	}
 	&__data {
 		display: flex;
+		@media screen and (max-width: 320px) {
+			flex-direction: column;
+		}
 	}
 	&__our-data {
 		width: 45%;
 		display: flex;
 		flex-direction: column;
+		@media screen and (max-width: 320px) {
+			width: 100%;
+			padding: 0 1rem;
+		}
 	}
 	&__data-user {
 		width: 55%;
@@ -1087,6 +1160,10 @@ body{
 		padding-left: 40px;
 		@media screen and (max-width: 425px) {
 			padding-left: 2rem;
+		}
+		@media screen and (max-width: 320px) {
+			width: 100%;
+			padding: 0 1rem;
 		}
 	}
 	&__btn--splash {
@@ -1119,6 +1196,10 @@ body{
 		@media screen and (max-width: 425px) {
 			width: 15rem;
 		}
+		@media screen and (max-width: 320px) {
+			width: 100%;
+			padding: 0 1rem;
+		}
 	}
 	&__item {
 		margin-bottom: 30px;
@@ -1131,6 +1212,10 @@ body{
 		}
 		@media screen and (max-width: 425px) {
 			font-size: 1.1rem;
+		}
+		@media screen and (max-width: 320px) {
+			font-size: 1.5rem;
+			// width: 100%;
 		}
 		&--email,
 		&--tel,
@@ -1197,6 +1282,9 @@ body{
 	@media screen and (max-width: 425px) {
 		height: 50rem;
 	}
+	@media screen and (max-width: 320px) {
+		height: 70rem;
+	}
 	h5 {
 		display: none;
 	}
@@ -1233,11 +1321,17 @@ body{
 		font-size: 1.4rem;
 	}
 	&__copyright {
-			padding: 6px 20px 0 0 ;
-			border-right: 2px solid rgba(255,255,255, .4);
+		padding: 6px 20px 0 0 ;
+		border-right: 2px solid rgba(255,255,255, .4);
+		@media screen and (max-width: 320px) {
+			padding: 0 0 0 2rem;
+		}
 	}
 	&__prod {
 		padding: 6px 0 0 20px;
+		@media screen and (max-width: 320px) {
+			padding: 0 1rem;
+		}
 	}
 	&__nav {
 		display: flex;
@@ -1300,6 +1394,9 @@ body{
 			100% {
 				transform: rotateZ(60deg) translate(1em, -9em);
 			}
+		}
+		@media screen and (max-width: 320px) {
+			margin: 0 1rem;
 		}
 	}
 }
