@@ -235,5 +235,8 @@ function initMap() {
 $(document).ready(function(){
   $("#header > nav > div.nav__burger").click(function() {
     $("#header > nav > div.nav__links").toggle('slow', 'swing');
+    // $("#header > nav > ul").toggleClass("social-left");
   });
 });
+
+
