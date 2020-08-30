@@ -1631,6 +1631,11 @@ body {
     display: flex;
     margin-top: 45px;
     font-size: 1.4rem; }
+    @media screen and (max-width: 640px) {
+      .footer__caption {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; } }
   .footer__copyright {
     padding: 6px 20px 0 0;
     border-right: 2px solid rgba(255, 255, 255, 0.4); }

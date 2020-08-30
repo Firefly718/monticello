@@ -1319,6 +1319,9 @@ body{
 		display: flex;
 		margin-top: 45px;
 		font-size: 1.4rem;
+		@media screen and (max-width: 640px) {
+			justify-content: center;
+		} 
 	}
 	&__copyright {
 		padding: 6px 20px 0 0 ;
