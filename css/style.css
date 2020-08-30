@@ -572,6 +572,10 @@ body {
         position: absolute;
         top: 6rem;
         width: 100%; } }
+    @media screen and (max-width: 568px) {
+      .nav__links {
+        width: 80%;
+        margin-left: 10%; } }
     @media screen and (max-width: 425px) {
       .nav__links {
         height: auto;
@@ -769,6 +773,10 @@ body {
       .header__title {
         font-size: 4rem;
         margin-top: 4rem; } }
+    @media screen and (max-width: 568px) {
+      .header__title {
+        font-size: 3rem;
+        margin-top: 6rem; } }
     @media screen and (max-width: 425px) {
       .header__title {
         font-size: 4rem; } }
@@ -779,6 +787,9 @@ body {
     font-size: 1.8rem;
     font-family: 'GothamBook', serif;
     letter-spacing: 2px; }
+    @media screen and (max-width: 568px) {
+      .header__subtitle {
+        font-size: 1.5rem; } }
     @media screen and (max-width: 320px) {
       .header__subtitle {
         padding: 0 2rem; } }
@@ -1042,6 +1053,10 @@ body {
         margin-left: 3rem;
         -webkit-box-shadow: -100px -40px 0px 0px #55b7ff;
         box-shadow: -100px -40px 0px 0px #55b7ff; } }
+    @media screen and (max-width: 568px) {
+      .desc__pic {
+        -webkit-box-shadow: -100px -60px 0px -30px #55b7ff;
+        box-shadow: -100px -60px 0px -30px #55b7ff; } }
     @media screen and (max-width: 425px) {
       .desc__pic {
         margin: 0 0 0 10%;
@@ -1106,6 +1121,9 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1; }
+    @media screen and (max-width: 568px) {
+      .desc__title {
+        font-size: 3.5rem; } }
     @media screen and (max-width: 425px) {
       .desc__title {
         text-align: center; } }
