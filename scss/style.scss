@@ -142,7 +142,7 @@ body{
 		&:focus::after {
 			animation: sheen 1s forwards;
 		}
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 823px) {
 			display: flex;
 		}
 		@media screen and (max-width: 425px) {
@@ -171,7 +171,7 @@ body{
 		@media screen and (max-width: 1024px) {
 			width: 45%;
 		}
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 823px) {
 			display: none;
 			position: absolute;
 			top: 6rem;
@@ -211,7 +211,7 @@ body{
 		&:focus:before {
 			background-color: #fff;
 		}
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 823px) {
 			margin: 0 3rem;
 			font-size: 1.6rem;
 		}
@@ -413,6 +413,10 @@ body{
 			font-size: 8rem;
 			font-family: 'gothambold1', serif;
 			margin: 0 auto;
+			@media screen and (max-width: 823px) {
+				font-size: 4rem;
+				margin-top: 4rem;
+			}
 			@media screen and (max-width: 425px) {
 				font-size: 4rem;
 			}
@@ -1132,6 +1136,9 @@ body{
 	color: $text-color;
 	box-shadow: 0px 0px 28px 5px rgba(0,0,0,0.75);
 	font-size: 1.9rem;
+	@media screen and (max-width: 823px) {
+		width: 68rem;
+	}
 	@media screen and (max-width: 768px) {
 		width: 600px;
 	}
@@ -1323,7 +1330,7 @@ body{
 	background-size: contain;
 	color: #fff;
 	padding: 200px 0 200px 0;
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 823px) {
 		padding-bottom: 6rem;
 	}
 	&__content {
@@ -1335,7 +1342,7 @@ body{
 		display: flex;
 		margin-top: 45px;
 		font-size: 1.4rem;
-		@media screen and (max-width: 731px) {
+		@media screen and (max-width: 823px) {
 			justify-content: center;
 		} 
 	}
