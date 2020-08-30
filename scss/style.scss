@@ -59,9 +59,6 @@ body{
 	font-size: 1.8rem;
 	line-height: 1.6;
 	color: $text-color;
-	// @media screen and (max-width: 1024px) {
-	// 	height: auto;
-	// }
 }
 .container {
 	width: 1170px;
@@ -179,18 +176,14 @@ body{
 			// outline: 2px solid red;
 			// justify-content: space-evenly;
 		}
-		@media screen and (max-width: 568px) {
+		@media screen and (max-width: 600px) {
 			width: 80%;
 			margin-left: 10%;
-			// display: block;
-			// margin: 0 auto;
-			// align-self: center;
-			// justify-self: center;
 		}
 		@media screen and (max-width: 425px) {
 			height: auto;
 			background-color: $text-color;
-			left: -3rem;
+			left: -6rem;
 			width: auto;
 			border-radius: 0 10px 10px 0;
 		}
@@ -440,6 +433,10 @@ body{
 			font-size: 1.8rem;
 			font-family: 'GothamBook', serif;
 			letter-spacing: 2px;
+			@media screen and (max-width: 600px) {
+				// width: 90%;
+				padding: 0 1rem;
+			}
 			@media screen and (max-width: 568px) {
 				font-size: 1.5rem;
 			}
@@ -727,7 +724,7 @@ body{
 			margin-left: 3rem;
 			box-shadow: -100px -40px 0px 0px rgba(85,183,255,1);
 		}
-		@media screen and (max-width: 568px) {
+		@media screen and (max-width: 600px) {
 			box-shadow: -100px -60px 0px -30px rgba(85,183,255,1);
 		}
 		@media screen and (max-width: 425px) {
@@ -798,7 +795,7 @@ body{
 		margin: 0;
 		padding: 0;
 		line-height: 1;
-		@media screen and (max-width: 568px) {
+		@media screen and (max-width: 600px) {
 			font-size: 3.5rem;
 		}
 		@media screen and (max-width: 425px) {
@@ -1164,6 +1161,9 @@ body{
 	@media screen and (max-width: 768px) {
 		width: 600px;
 	}
+	@media screen and (max-width: 653px) {
+		width: 50rem;
+	}
 	@media screen and (max-width: 640px) {
 		width: 50rem;
 	}
@@ -1231,7 +1231,7 @@ body{
 			outline-offset: 15px;
 			text-shadow: 1px 1px 2px $brand-color; 
 		}
-		@media screen and (max-width: 640px) {
+		@media screen and (max-width: 653px) {
 			width: 17rem;
 		}
 		@media screen and (max-width: 425px) {
