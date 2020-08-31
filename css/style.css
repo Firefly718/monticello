@@ -1003,7 +1003,8 @@ body {
       cursor: pointer; }
 
 .item {
-  display: inline-block; }
+  display: inline-block;
+  padding: 0 10px; }
 
 .slick-arrow {
   position: absolute;
@@ -1313,9 +1314,6 @@ body {
       .desc__locate-text {
         margin: 0 1rem; } }
 
-.item {
-  padding: 0 10px; }
-
 .news {
   background: -o-linear-gradient(45deg, rgba(60, 27, 212, 0.9), rgba(36, 204, 250, 0.9)), url(../img/city.png);
   background: linear-gradient(45deg, rgba(60, 27, 212, 0.9), rgba(36, 204, 250, 0.9)), url(../img/city.png);
@@ -1364,25 +1362,40 @@ body {
     max-height: 60px;
     overflow: hidden;
     -o-text-overflow: ellipsis;
-    text-overflow: ellipsis; }
-    @media screen and (max-width: 320px) {
+    text-overflow: ellipsis;
+    width: 100%; }
+    @media screen and (max-width: 1000px) {
       .news__title {
-        padding: 0 1rem; } }
+        font-size: 1.8rem;
+        max-height: 10rem;
+        padding: 1rem 0; } }
+    @media screen and (max-width: 330px) {
+      .news__title {
+        padding: 0 1rem;
+        font-size: 1.6rem; } }
   .news__text {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.8rem;
     color: #4b5562;
     line-height: 1.5;
     margin-bottom: 25px;
-    max-height: 55px;
+    height: 10rem;
+    width: 100%;
+    overflow: hidden;
     -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    overflow: hidden; }
+    text-overflow: ellipsis; }
+    @media screen and (max-width: 1000px) {
+      .news__text {
+        margin: 1rem 0;
+        font-size: 1.5rem; } }
     @media screen and (max-width: 320px) {
       .news__text {
         padding: 0 1rem; } }
   .news__container {
     padding: 30px 20px 30px 10px; }
+    @media screen and (max-width: 1000px) {
+      .news__container {
+        padding: 1rem; } }
   .news__avatar {
     width: 60px;
     height: 60px;
@@ -1402,7 +1415,7 @@ body {
     text-transform: uppercase;
     font-size: 1.8rem;
     line-height: 1; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 890px) {
       .news__name {
         font-size: 1.5rem; } }
     @media screen and (max-width: 320px) {
