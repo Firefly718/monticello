@@ -87,8 +87,12 @@ body{
 		justify-content: space-evenly;
 		width: 100%;
 	}
-	@media screen and (max-width: 375px) {
+	@media screen and (max-width: 414px) {
 		justify-content: space-between;
+	}
+	@media screen and (max-width: 280px) {
+		flex-flow: row wrap;
+		justify-content: flex-end;
 	}
 	&__logo-wrap {
 		width: 245px;
@@ -104,8 +108,12 @@ body{
 			height: 50%;
 			@include flexCenterSelf;
 		}
-		@media screen and (max-width: 425px) {
+		@media screen and (max-width: 620px) {
 			order: -3;
+		}
+		@media screen and (max-width: 280px) {
+			flex: 1 1 100%;
+			margin-bottom: 2rem;
 		}
 	}
 	&__logo {
@@ -139,10 +147,10 @@ body{
 		&:focus::after {
 			animation: sheen 1s forwards;
 		}
-		@media screen and (max-width: 823px) {
+		@media screen and (max-width: 1000px) {
 			display: flex;
 		}
-		@media screen and (max-width: 425px) {
+		@media screen and (max-width: 620px) {
 			margin-left: 1rem;
 			order: -1;
 		}
@@ -168,25 +176,33 @@ body{
 		@media screen and (max-width: 1024px) {
 			width: 45%;
 		}
-		@media screen and (max-width: 823px) {
+		@media screen and (max-width: 1000px) {
 			display: none;
 			position: absolute;
 			top: 6rem;
 			width: 100%;
-			// outline: 2px solid red;
-			// justify-content: space-evenly;
 		}
 		@media screen and (max-width: 600px) {
 			width: 80%;
 			margin-left: 10%;
 		}
-		@media screen and (max-width: 425px) {
+		@media screen and (max-width: 600px) {
 			height: auto;
 			background-color: $text-color;
-			left: -6rem;
+			left: -9rem;
 			width: auto;
 			border-radius: 0 10px 10px 0;
 		}
+		@media screen and (max-width: 500px) {
+			left: -8rem;
+		}
+		@media screen and (max-width: 400px) {
+			left: -7rem;
+		}
+		@media screen and (max-width: 300px) {
+			left: -5rem;
+		}
+
 	}
 	&__link {
 		font-size: 1.4rem;
@@ -212,11 +228,14 @@ body{
 		&:focus:before {
 			background-color: #fff;
 		}
-		@media screen and (max-width: 823px) {
+		@media screen and (max-width: 1000px) {
 			margin: 0 3rem;
 			font-size: 1.6rem;
 		}
-		@media screen and (max-width: 425px) {
+		@media screen and (max-width: 620px) {
+			font-size: 1.5rem;
+		}
+		@media screen and (max-width: 600px) {
 			margin: 1rem 5.5rem;
 			display: block;
 		}
@@ -295,10 +314,10 @@ body{
 	margin: 0px;
 	display: flex;
 	align-items: center;
-	@media screen and (max-width: 425px) {
+	@media screen and (max-width: 620px) {
 		order: -2;
 	}
-	@media screen and (max-width: 375px) {
+	@media screen and (max-width: 414px) {
 		position: absolute;
 		flex-direction: column;
 		top: 4rem;
@@ -306,6 +325,11 @@ body{
 		height: auto;
 		// outline: 2px solid red;
 		// display: none;
+	}
+	@media screen and (max-width: 280px) {
+		right: 0rem;
+		top: 11rem;
+		width: 4rem;
 	}
 	&__shiny {
 		cursor: pointer;
@@ -353,7 +377,7 @@ body{
 		@media screen and (max-width: 768px) {
 			margin-left: 1rem;
 		}
-		@media screen and (max-width: 375px) {
+		@media screen and (max-width: 414px) {
 			// display: none;
 			margin-left: 0;
 			margin-top: 1rem;
@@ -409,6 +433,15 @@ body{
 			@media screen and (max-width: 425px) {
 				margin-top: 6rem;
 			}
+			@media screen and (max-width: 280px) {
+				margin-top: 9rem;
+			}
+			@media screen and (max-width: 600px) {
+				margin-top: 5rem;
+			}
+			@media screen and (max-width: 290px) {
+				margin-top: 9rem;
+			}
 		}
 		&__title {
 			font-size: 8rem;
@@ -420,13 +453,19 @@ body{
 			}
 			@media screen and (max-width: 568px) {
 				font-size: 3rem;
-				margin-top: 6rem;
 			}
 			@media screen and (max-width: 425px) {
-				font-size: 4rem;
+				font-size: 3rem;
 			}
-			@media screen and (max-width: 320px) {
+			@media screen and (max-width: 330px) {
 				padding: 0 2rem;
+				font-size: 2.5rem;
+			}
+			@media screen and (max-width: 310px) {
+				font-size: 2rem;
+			}
+			@media screen and (max-width: 290px) {
+				font-size: 1.8rem;
 			}
 		}
 		&__subtitle {
@@ -442,6 +481,10 @@ body{
 			}
 			@media screen and (max-width: 320px) {
 				padding: 0 2rem;
+				font-size: 1.3rem;
+			}
+			@media screen and (max-width: 240px) {
+				font-size: 1.2rem;
 			}
 		}
 }
