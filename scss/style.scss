@@ -729,8 +729,11 @@ body{
 			padding-bottom: 0;
 		}
 		@media screen and (max-width: 320px) {
-			font-size: 3.5rem;
+			font-size: 3rem;
 			padding: 0 2rem;
+		}
+		@media screen and (max-width: 270px) {
+			font-size: 2.5rem;
 		}
 		&::before {
 			content: '';
@@ -763,12 +766,12 @@ body{
 		display: flex;
 		position: relative;
 		margin: 70px auto 0 auto;
-		@media screen and (max-width: 425px) {
+		@media screen and (max-width: 520px) {
 			flex-direction: column;
 		}
 		&--second {
 			margin: 210px auto 0 auto;
-			@media screen and (max-width: 425px) {
+			@media screen and (max-width: 520px) {
 				margin-top: 15rem;
 				flex-direction: column-reverse;
 			}
@@ -780,30 +783,55 @@ body{
         background-image: url(../img/about/about1.jpg);
 		box-shadow: -200px -65px 0px 9px rgba(85,183,255,1);
 		background-repeat: no-repeat;
+		@media screen and (max-width: 1020px) {
+			box-shadow: -100px -60px 0px -20px rgba(85,183,255,1);
+		}
+		@media screen and (max-width: 870px) {
+			box-shadow: -100px -70px 0px -50px rgba(85,183,255,1);
+		}
 		@media screen and (max-width: 768px) {
 			margin-left: 3rem;
 			box-shadow: -100px -40px 0px 0px rgba(85,183,255,1);
 		}
+		@media screen and (max-width: 610px) {
+			box-shadow: -100px -60px 0px -10px rgba(85,183,255,1);
+		}
 		@media screen and (max-width: 600px) {
 			box-shadow: -100px -60px 0px -30px rgba(85,183,255,1);
 		}
-		@media screen and (max-width: 425px) {
+		@media screen and (max-width: 500px) {
+			box-shadow: -100px -40px 0px 0px rgba(85,183,255,1);
+		}
+		@media screen and (max-width: 520px) {
 			margin: 0 0 0 10%;
 			height: 30rem;
 			width: 80%;
+		}
+		@media screen and (max-width: 430px) {
+			box-shadow: -100px -120px 0px -50px rgba(85,183,255,1);
+		}
+		@media screen and (max-width: 425px) {
 			box-shadow: -60px -20px 0px 0px rgba(85,183,255,1);
 			// outline: 2px solid red;
 		}
 		&--second {
         background-image: url(../img/about/about2.jpg);
 		box-shadow: 200px -65px 0px 9px rgba(183,85,255,1);
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 780px) {
 			margin: 0 3rem 0 0;
 			box-shadow: 100px -60px 0px -30px rgba(183,85,255,1);
+			background-position-x: -6rem;
+
+		}
+		@media screen and (max-width: 520px) {
+			margin: 0 0 0 10%;
+		}
+		@media screen and (max-width: 500px) {
+			box-shadow: 100px -40px 0px 0px rgba(183,85,255,1);
+			background-position-x: -10rem;
 		}
 		@media screen and (max-width: 425px) {
 			box-shadow: 60px -20px 0px 0px rgba(183,85,255,1);
-			margin: 0 0 0 10%;
 		}
 		}
 	}
@@ -821,7 +849,7 @@ body{
 			padding: 0 10px 0 35px;
 		}
 		
-		@media screen and (max-width: 425px) {
+		@media screen and (max-width: 520px) {
 			width: 100%;
 			margin-top: 2rem;
 			padding: 0 20px;
@@ -831,7 +859,7 @@ body{
 			@media screen and (max-width: 768px) {
 				padding: 0 35px 0 10px;
 			}
-			@media screen and (max-width: 425px) {
+			@media screen and (max-width: 520px) {
 				width: 100%;
 				padding: 0 20px;
 			}
@@ -841,6 +869,9 @@ body{
         font-family: 'gothambold1';
 		text-transform: uppercase;
 		font-size: 2.2rem;
+		@media screen and (max-width: 600px) {
+			font-size: 1.8rem;
+		}
 		@media screen and (max-width: 425px) {
 			text-align: center;
 		}
@@ -855,15 +886,21 @@ body{
 		margin: 0;
 		padding: 0;
 		line-height: 1;
+		@media screen and (max-width: 700px) {
+			font-size: 4rem;
+		}
 		@media screen and (max-width: 600px) {
 			font-size: 3.5rem;
 		}
 		@media screen and (max-width: 425px) {
 			text-align: center;
+			padding: 0 2rem;
 		}
 		@media screen and (max-width: 320px) {
-			font-size: 4rem;
-			padding: 0 2rem;
+			font-size: 3rem;
+		}
+		@media screen and (max-width: 270px) {
+			font-size: 2.5rem;
 		}
 	}
 	&__text {
