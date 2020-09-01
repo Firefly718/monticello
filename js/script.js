@@ -245,6 +245,10 @@ $(document).ready(function(){
   });
 });
 
+
+
+
+
 // ellipsis
 $('.foo').ellipsis();
 
@@ -255,4 +259,23 @@ $('.foo').ellipsis({
   responsive: true      // set to true if you want ellipsis to update on window resize. Default is false
 });
 
+
+
+
+
+
+// // remove vertical line (icon) in footer after 310px
+// function removeIcon(x) {
+//   if (x.matches) { // If media query matches
+//     $("#footer > div > div.footer__caption > p.footer__prod").remove('|');
+//     $("#footer > div > div.footer__caption > p.footer__copyright").remove('|');
+//   } 
+//   // else {
+//   //   document.body.style.backgroundColor = "pink";
+//   // }
+// }
+
+// var x = window.matchMedia("(max-width: 310px)")
+// removeIcon(x) // Call listener function at run time
+// x.addListener(removeIcon) // Attach listener function on state changes
 

@@ -121,6 +121,9 @@ body{
 		@media screen and (max-width: 320px) {
 			padding: 0 1rem;
 		}
+		@media screen and (max-width: 280px) {
+			height: 4rem;
+		}
 	}
 	&__burger {
 		border: 2px solid rgba(255, 255, 255, .5);
@@ -387,14 +390,40 @@ body{
 
 // social -> footer
 #footer > div > div.footer__nav > ul {
-	@media screen and (max-width: 375px) {
+	@media screen and (max-width: 420px) {
 		flex-direction: row;
 		position: relative;
 		// display: block;
 		// margin: 0 auto;
+		margin: 1rem 1rem 5rem 1rem;
+		// outline: 2px solid red;
+	}
+	@media screen and (max-width: 415px) {
+		margin: 3rem 1rem;
+	}
+	@media screen and (max-width: 400px) {
+		margin: 1rem 1rem 5rem 1rem;
 	}
 	@media screen and (max-width: 320px) {
-		padding: 0 2rem;
+		padding: 0 1rem;
+	}
+	@media screen and (max-width: 290px) {
+		position: absolute;
+		left: 0rem;
+		top: 27rem;
+		display: flex;
+		justify-content: center;
+		width: 90%;
+	}
+	@media screen and (max-width: 280px) {
+		position: absolute;
+		left: 1rem;
+		top: 24rem;
+		// display: flex;
+		// justify-content: center;
+		// z-index: 999;
+		margin: 0;
+		padding: 0;
 	}
 }
 
@@ -1521,10 +1550,17 @@ body{
 	@media screen and (max-width: 823px) {
 		padding-bottom: 6rem;
 	}
+	@media screen and (max-width: 280px) {
+		padding-top: 16rem;
+	}
 	&__content {
 		width: 800px;
 		max-width: 80%;
-		margin: 0 auto;	
+		margin: 0 auto;
+		@media screen and (max-width: 280px) {
+			height: 25rem;
+		}
+
 	}
 	&__caption {
 		display: flex;
@@ -1532,7 +1568,11 @@ body{
 		font-size: 1.4rem;
 		@media screen and (max-width: 823px) {
 			justify-content: center;
-		} 
+		}
+		@media screen and (max-width: 310px) {
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 	&__copyright {
 		padding: 6px 20px 0 0 ;
@@ -1550,14 +1590,23 @@ body{
 	&__nav {
 		display: flex;
 		justify-content: space-between;
-		@media screen and (max-width: 375px) {
+		@media screen and (max-width: 420px) {
 			align-items: center;
 			justify-content: center;
 			flex-direction: column;
 			height: 8rem;
+			// outline: 2px solid yellow;
 		}
 	}
 }
+
+// .fas .fa-heart {
+// 	@media screen and (max-width: 310px) {
+// 		display: none;
+// 		background-color: transparent;
+// 		color: transparent;
+// 	}
+// }
 
 .social {
 	list-style: none;
@@ -1609,9 +1658,9 @@ body{
 				transform: rotateZ(60deg) translate(1em, -9em);
 			}
 		}
-		@media screen and (max-width: 320px) {
-			margin: 0 1rem;
-		}
+		// @media screen and (max-width: 420px) {
+		// 	margin: 4rem 1rem 0 1rem;
+		// }
 	}
 }
 
